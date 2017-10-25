@@ -8,3 +8,22 @@
   background: red;
   position: relative;
 }
+
+.racer {
+  position: absolute;
+  left: 0;
+  transition: left .5s;
+}
+
+#playerA{
+
+}
+#playerB{
+
+}
+.playerAStyle{
+  left: 0;
+}
+.playerBStyle{
+  left: 0;
+}
