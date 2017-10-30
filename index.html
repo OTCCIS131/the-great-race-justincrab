@@ -4,32 +4,26 @@
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-        <link rel="stylesheet" type="text/css" href="\\otc.edu\stures\stuhome\jc0470371\CIS 131 WEB DEV II\the-great-race-justincrab\styles.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
 
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
     </head>
     <body>
-        <div class="container" id="app">
-            <pre>{{ $data }}</pre>
-            <button @click="startRace">Start</button>
-            <div :class="playerAStyle" id="frame">
-                <div id="block"></div>
-            </div>
-            <div :class="playerBStyle" id="frame">
-                <div id="block"></div>
-            </div>
+        <div id="app">
+        <input type="image" @click="startRace" src="https://cdn.pixabay.com/photo/2014/04/02/11/15/wool-305684_960_720.png" class="startbutton" alt="start button">
+        <!-- <pre>{{ $data }}</pre>
+        <button @click="startRace">Start</button> -->
+
+        <img src="\\otc.edu\stures\stuhome\jc0470371\CIS 131 WEB DEV II\the-great-race-justincrab\images\gifs\tumblr_nvs7c0aGzK1uyv02vo1_500.gif" id="playerAStyle" class="racer" :style="playerAStyle" alt="space cat">
+
+
+        <img src="\\otc.edu\stures\stuhome\jc0470371\CIS 131 WEB DEV II\the-great-race-justincrab\images\gifs\tumblr_o27qu6iPLC1uxtzn8o1_500.gif" id="playerBStyle" class="racer" :style="playerBStyle" alt="other cat">
         </div>
 
+        <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/vue@2.5.2/dist/vue.js"></script>
         <script src="app.js"></script>
-
-
-        <script
-        src="http://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous"></script>
-        <img src="\\otc.edu\stures\stuhome\jc0470371\CIS 131 WEB DEV II\the-great-race-justincrab\images\gifs\tumblr_o27qu6iPLC1uxtzn8o1_500.gif" class="bottompic" alt="other cat">
-        <img src="\\otc.edu\stures\stuhome\jc0470371\CIS 131 WEB DEV II\the-great-race-justincrab\images\gifs\tumblr_nvs7c0aGzK1uyv02vo1_500.gif" class="toppic" alt="space cat">
-        <img src="https://cdn.pixabay.com/photo/2014/04/02/11/15/wool-305684_960_720.png" class="startbutton" alt="start button">
     </body>
 </html>

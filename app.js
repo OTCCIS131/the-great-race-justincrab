@@ -2,7 +2,7 @@
 
 
 // (function () {
-    var app = new Vue({
+    let app = new Vue({
         el: '#app',
         data: {
             racing: false,
@@ -27,7 +27,7 @@
                 //this is where you add random to the LEFT css prop
                 return {
                     left: `${this.playerA}vw`
-                }              
+                }             
             },
             playerBStyle() {
                 return {
@@ -38,12 +38,13 @@
         methods: {
             startRace() {
                 this.racing = true
-                this.setInterval(function() {
+                this.interval = setInterval(() => {//use fat arrow so 'this.' keyword is not redefined to THIS function only
                     this.progressPlayers()
                 }, 50);
             },
             progressPlayers() {
                 this.tick++
+                //if Math.random > 0.5 this.player += 1
                 this.playerA += Math.random()
                 this.playerB += Math.random()
                 this.checkVictory()
@@ -51,17 +52,21 @@
             checkVictory(){
                 if (this.playerA == this.playerB) return//exit loop
 
-                if (this.playerA >= 90){
+                if (this.playerA >= 80){
                     //playerA wins~
+                    playerA.winner=true;
+                    playerB.winner=false;
                     this.callVictory()
                 }
-                if (this.playerB >= 90) {
+                if (this.playerB >= 80) {
                     //playerB wins~
                     this.callVictory()
+                    playerA.winner=false;
+                    playerB.winner=true;
                 }
             },
             callVictory(){
-                this.winning
+                clearInterval(this.interval);
             }
         }
     })

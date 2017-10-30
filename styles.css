@@ -1,50 +1,33 @@
 body {
   background-image: url(http://studioghiblimovies.com/wp-content/uploads/2014/11/image0024.jpg);
   background-size: cover;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
 }
 .startbutton {
   width: 10%;
   position: absolute;
-  left: 15px;
-  top:15px;
+  left: 1vw;
+  top:1vw;
 }
-.toppic {
+#playerAStyle{
   position:absolute;
-  bottom: 200px;
-  left:0px;
+  bottom: 10vw;
+  left:0vw;
 }
-.bottompic {
+#playerBStyle{
   position: absolute;
-  bottom: 0px;
-  left: 0px;
+  bottom: 0vw;
+  left: 0vw;
 }
-/* #frame {
-  border: 1px solid red;
-}
-
-#block {
-  width: 20px;
-  height: 40px;
-  background: red;
-  position: relative;
-}
-
 .racer {
-  position: absolute;
-  left: 0;
+  /* position: absolute;
+  left: 0; */
   transition: left .5s;
 }
+.winner{
+  bottom: 20vh;
+  left: 40vw !important;
 
-#playerA{
-
+  transition: width 2s, height 4s;
 }
-#playerB{
-
-}
-.playerAStyle{
-  left: 0;
-}
-.playerBStyle{
-  left: 0;
-}
-} */
