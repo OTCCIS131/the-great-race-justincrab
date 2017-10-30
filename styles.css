@@ -1,4 +1,24 @@
-#frame {
+body {
+  background-image: url(http://studioghiblimovies.com/wp-content/uploads/2014/11/image0024.jpg);
+  background-size: cover;
+}
+.startbutton {
+  width: 10%;
+  position: absolute;
+  left: 15px;
+  top:15px;
+}
+.toppic {
+  position:absolute;
+  bottom: 200px;
+  left:0px;
+}
+.bottompic {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+/* #frame {
   border: 1px solid red;
 }
 
@@ -27,3 +47,4 @@
 .playerBStyle{
   left: 0;
 }
+} */
