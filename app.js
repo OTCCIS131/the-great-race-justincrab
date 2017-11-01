@@ -53,20 +53,27 @@
                 if (this.playerA == this.playerB) return//exit loop
 
                 if (this.playerA >= 80){
+                    alert("GHOST CAT WIIINS!")
                     //playerA wins~
-                    playerA.winner=true;
-                    playerB.winner=false;
-                    this.callVictory()
+
+                    // DOOOO)OOOOOOOONT SET playA.winner to anything. IT MAKES THE KITTIES NEVER STOP RUNNING DONT DO IT VERY BAD!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+                    // playerA.winner=true;
+                    // playerB.winner=false;
+                    this.callVictory();
                 }
                 if (this.playerB >= 80) {
+                    alert("BABY CAT WIIINS!")
                     //playerB wins~
-                    this.callVictory()
-                    playerA.winner=false;
-                    playerB.winner=true;
+                    // playerA.winner=false;
+                    // playerB.winner=true;
+                    this.callVictory();
                 }
             },
             callVictory(){
                 clearInterval(this.interval);
+                this.playerA = 0;
+                this.playerB = 0;
             }
         }
     })

@@ -10,6 +10,11 @@ body {
   left: 1vw;
   top:1vw;
 }
+#goal {
+  position: absolute;
+  right:1vw;
+  bottom:1vw;
+}
 #playerAStyle{
   position:absolute;
   bottom: 10vw;
@@ -19,6 +24,7 @@ body {
   position: absolute;
   bottom: 0vw;
   left: 0vw;
+  width: 36vw;
 }
 .racer {
   /* position: absolute;
